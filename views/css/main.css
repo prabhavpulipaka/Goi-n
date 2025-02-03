@@ -1,24 +1,73 @@
-/*body,
- table,
-    thead,
-    tr,
-    tbody,
-    th,
-    td {
-        text-align: center;
-    }*/
-    body{
-        text-align: center !important;
+/* Apply background image to the entire page */
+body {
+    display: flex;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;      /* Centers content vertically */
+    height: 100vh;
+    margin: 0;
+   
+    padding-right: 350px;
+
+/* Form container with a separate background */
+.form-group {
+    background: rgba(255, 255, 255, 0.9);  /* White with slight transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;  /* Controls maximum width */
+}
+
+/* Input fields styling */
+input {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+}
+/* Button styling */
+.mssg {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+div{
+    text-align: center;
+    
+    font-size: medium;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
     }
-    p{
-        margin-top: 20px;
-        font-size: 30px;
+
+    .form-group {
+        width: 90%;
+        max-width: 350px;
     }
-    input{
-        text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .form-group {
+        padding: 20px;
     }
-    .mssg{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border-radius: 5px;
+
+    input {
+        font-size: 14px;
+        padding: 8px;
     }
+}
+}
